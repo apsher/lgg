@@ -1,0 +1,70 @@
+.zhuce_con{
+	height:960px;
+	margin-top:10px;
+}
+.zhuce_l{
+	height:956px;
+	width:626px;
+	border:2px solid #cccccc; 
+	float:left;
+}
+.zhuce_l_t{
+	height:44px;
+	padding-left:20px ;
+	line-height: 44px;
+	border-bottom: 1px solid #cccccc;
+	margin-bottom: 10px;
+}
+.zhuce_l_t h2{
+	font-size:24px;
+	color:#1566c0;
+}
+.form_item{
+	height:61px;
+	width:626px;
+	float:left;
+}
+.form_input{
+	width:296px;
+	height:28px;
+	border:1px solid #cccccc;
+}
+.form_item span{
+	display: inline-block;
+	width:136px;
+	text-align: right;
+	color:#666666;
+}
+.warn{
+	color:#f04a27;
+}
+.zhuce_btn{
+	height:37px;
+	width:81px;
+	border:0;
+	background:#fc570e;
+	color:white;
+	cursor: pointer;
+}
+.zhuce_r{
+	height:222px;
+	width:335px;
+	padding-top: 30px;
+	margin-left: 25px;
+	float:left;
+	border-left:1px dashed #CCCCCC;
+}
+.zhuce_r span{
+	display:inline-block;
+	height:42px;
+	line-height:42px;
+	font-size:13px;
+	color:#5e5e5e;
+	margin-left: 30px;
+}
+.denglu_btn{
+	height:42px;
+	width:142px;
+	background:#d61e27;
+	border:0;
+}

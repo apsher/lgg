@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/denglu.css">
+	<link rel="stylesheet" href="//at.alicdn.com/t/font_863609_ed1mebsnz3q.css">
+</head>
+<body>
+</body>
+</html>
+	<!--header-->
+	<div class="header"></div>
+	
+	<!-- denglu -->
+	<div class="denglu">
+		<div class="denglu_con">
+			<div class="denglu_l">
+				<img src="img/denglu_l.jpg" alt="">
+			</div>
+			<div class="denglu_r">
+				<div class="denglu_r_t">
+					<h2>用户登录</h2>
+				</div>
+				<form style="float:left;" class="login-form" onsubmit="return false">
+					<ul>
+						<li class="form_item">
+							<input type="text" class="form_input" name="username" required="required" placeholder="用户名/邮箱地址/手机号">
+						</li>
+						<li class="form_item">
+							<input type="password" class="form_input" name="password" required="required" placeholder="填写密码">
+						</li>
+						<li class="form_item">
+							<input style="width:88px" type="text" class="form_input" placeholder="填写验证码">
+							<a href="">看不清楚?换一个</a>
+						</li>
+						<li class="form_item">
+							<input value="" type="checkbox" > 
+							记住账号
+							&nbsp
+							<input value="" type="checkbox" > 
+							两周之内自动登录
+						</li>
+						<li class="form_item">
+							<button type="submit" class="denglu_btn" name="login-btn">登　录</button>
+							<a href="">忘记密码？</a>
+						</li>
+					</ul>
+				</form>
+				<div class="denglu_r_c">
+					<h5>合作网站账号登录</h5>
+					<a href="" style="margin-left: 20px;"><img src="img/bd.jpg" alt=""></a>
+					<a href=""><img src="img/zf.jpg" alt=""></a>
+					<a href=""><img src="img/tb.jpg" alt=""></a>
+					<a href=""><img src="img/qq.jpg" alt=""></a>
+					<a href=""><img src="img/xl.jpg" alt=""></a>
+				</div>
+				<div class="denglu_r_b">
+					<span>还不是会员？</span>
+					<a href="zhuce.html"><button type="submit" >免费注册</button></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/common/ajax.js"></script>
+    <script src="js/login.js"></script>
+    <script>
+        login.init('.login-form');
+    </script>
+	
+	<!--footer-->
+	<div class="footer"></div>
+	<script src="js/jquery.js"></script>
+	<script src="js/move2.js"></script>
+	<script src="js/hover.js"></script>
+	<script>
+   	$('.header').load('head_foot.html .header');
+   	$('.footer').load('head_foot.html .footer',function(){
+   		hoverfn();
+   	});
+   </script>
+	
+	
+	
+</body>
+</html>

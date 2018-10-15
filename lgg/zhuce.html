@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/zhuce.css">
+	<link rel="stylesheet" href="//at.alicdn.com/t/font_863609_fvwolgzxi.css">
+</head>
+<body>
+</body>
+</html>
+	<!--header-->
+	<div class="header"></div>
+	
+	<!-- zhuce -->
+	<div class="zhuce">
+  		<div class="zhuce_con">
+			<div class="zhuce_l">
+				<div class="zhuce_l_t">
+					<h2>用户注册</h2>
+				</div>
+				<form onsubmit="return false" class="login-form">
+					<ul>
+						<li class="form_item">
+							<span><em class="warn">* </em>登录帐号：</span>
+							<input autoComplete="off" type="text" class="form_input username" name="username" maxlength="20" placeholder="用户名/邮箱/手机号，最少4个字符">
+						</li>
+						<li class="form_item">
+							<span><em class="warn">* </em>密码：</span>
+							<input type="password" class="form_input password" name="password" required="required" maxlength="20" placeholder="6-20个字符">
+						</li>
+						<li class="form_item">
+							<span><em class="warn">* </em>确认密码：</span>
+							<input type="text" class="form_input" name="" maxlength="20" placeholder="再次填写密码">
+						</li>
+						<li class="form_item">
+							<span><em class="warn">* </em>会员名：</span>
+							<input type="text" class="form_input" name="" value="" >
+						</li>
+						<li class="form_item">
+							<span><em class="warn">* </em>地区：</span>
+							<select class="x-select">
+								<option>请选择</option>
+								<option>北京</option>
+								<option>上海</option>
+								<option>天津</option>
+								<option>重庆</option>
+							</select>
+							<select  class="x-select">
+								<option>请选择</option>
+								<option>北京</option>
+								<option>上海</option>
+								<option>天津</option>
+								<option>重庆</option>
+							</select>
+							<select  class="x-select">
+								<option>请选择</option>
+								<option>北京</option>
+								<option>上海</option>
+								<option>天津</option>
+								<option>重庆</option>
+							</select>
+						</li>
+						<li class="form_item">
+							<span>联系地址：</span>
+							<input type="text" class="form_input" name="" value="">
+						</li>
+						<li class="form_item">
+							<span><em class="warn">* </em>性别：</span>
+							<input value="" type="radio" name="sex"> 
+							男
+							&nbsp
+							<input value="" type="radio" name="sex"> 
+							女
+						</li>
+						<li class="form_item">
+							<span><em class="warn">* </em>手机：</span>
+							<input type="text" class="form_input" name="" value="" >
+						</li> 
+						<li class="form_item">
+							<span><em class="warn">* </em>邮编：</span>
+							<input type="text" class="form_input" name="" value="" >
+						</li> 
+						<li class="form_item">
+							<span><em class="warn">* </em>出生日期：</span>
+							<input type="text" class="form_input" name="" value="" >
+						</li>
+						<li class="form_item">
+							<span><em class="warn">* </em>QQ：</span>
+							<input type="text" class="form_input" name="" value="" >
+						</li> 
+						<li class="form_item">
+							<span>旺旺：</span>
+							<input type="text" class="form_input" name="" value="" >
+						</li> 
+						<li class="form_item">
+							<span><em class="warn">* </em>验证码：</span>
+							<input type="text" class="form_input" name="" value="" >
+						</li> 
+						<li class="form_item">
+							<span></span>
+							<input value="" type="checkbox" name="tongyi"> 
+							我已阅读并同意 <a href="">会员注册协议</a> 和 <a href="">隐私保护政策</a>
+						</li> 
+						<li class="form_item">
+							<span></span>
+							<button type="submit" class="zhuce_btn" name="login-btn">注　册</button>
+						</li>
+					</ul>
+				</form>
+			</div>
+			<script type="text/javascript">
+			var $username=document.querySelector('.username');
+			var $password=document.querySelector('.password');
+			$username.onblur=function(){
+				var a=/^[a-zA-Z0-9]{6,16}$/;
+				if(a.test($username.value)==false){
+					alert('您输入的账号格式错误，请重新输入');
+					$username.value=null;
+				}
+			}
+			$password.onchange=function(){
+				var a=/^[a-zA-Z0-9]{6,20}$/;
+				if(a.test($password.value)==false){
+					alert('您输入的密码格式错误，请重新输入');
+					$password.value=null;
+				}
+			}
+			</script>
+			<div class="zhuce_r">
+				<span>已经有会员帐号请直接登录</span>
+				<a href="denglu.html"><button type="submit" class="denglu_btn">转到登录页</button></a>
+			</div>
+		</div>
+	</div>
+	<script src="js/common/ajax.js"></script>
+    <script src="js/register.js"></script>
+    <script>
+        register.init('.login-form'); 
+    </script>
+
+	<!--footer-->
+	<div class="footer"></div>
+	<script src="js/jquery.js"></script>
+	<script src="js/move2.js"></script>
+	<script src="js/hover.js"></script>
+	<script>
+   	$('.header').load('head_foot.html .header');
+   	$('.footer').load('head_foot.html .footer',function(){
+   		hoverfn();
+   	});
+   	</script>
+</body>
+</html>
