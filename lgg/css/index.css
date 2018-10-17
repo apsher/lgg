@@ -249,7 +249,7 @@ body {
 	color:#5e5e5e;
 	font-size: 12px;
 }
-.number{
+.gwcnumber{
 	display:block;
 	background:red;
 	position:relative;
@@ -574,6 +574,9 @@ body {
 	text-align: center;
 	font-size: 13px;
 	line-height: 29px;
+	overflow: hidden;
+	white-space:nowrap;  
+	 margin:0 16px;
 }
 .bestSellers_r ul li h5 a:hover{
 	color:#0083ce;

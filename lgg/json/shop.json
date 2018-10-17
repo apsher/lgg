@@ -3,17 +3,23 @@
     "data": [{
             "id": 1,
             "name": "潮汕正宗香菇贡丸500g",
-            "price": 46.00
+            "price": 46.00,
+            "img":"img/sp1.jpg",
+            "href":"spxqy1.html"
         },
         {
             "id": 2,
             "name": "新鲜订制古法手工制作超软包子套装（18个）",
-            "price": 124.00
+            "price": 124.00,
+            "img":"img/sp2.jpg",
+            "href":"spxqy2.html"
         },
         {
             "id": 3,
             "name": "Xiaomi/小米 笔记本Air 13.3 四核增强版 8G+256G",
-            "price": 5399.00
+            "price": 5399.00,
+            "img":"img/sp3.jpg",
+            "href":"spxqy3.html"
         }
     ]
 }

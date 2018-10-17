@@ -36,10 +36,12 @@ function sendAjax(url, options) {
             // data = JSON.parse(data);
             if(typeof _default.success === 'function') {
                 _default.success(data);
+                gouwuchefn();
             }
-            
+//          gouwuchefn();
             // callback(data);
-        }
+        }  
     }
-    xhr.send(_default.data);
+    xhr.send(_default.data);   
+    
 }

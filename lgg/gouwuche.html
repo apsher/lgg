@@ -17,18 +17,19 @@
 			<div class="gwc_t">
 				<i class="lgg lgg-gouwuche"></i>购物车
 			</div>
-			<!--<div class="gwc_c">
+			<div class="gwc_c">
 				<span>
 					<b>您的购物车里还没有商品</b>，您可以：</br>
 					将<a href="">收藏夹</a>中的商品添加进来，或者去看看 <a href="index.html">商城 »</a>
 				</span>
 				<i class="lgg lgg-gouwuche"></i>
-			</div>-->
-			<div class="buzhou">
-				<img src="img/buzhou.jpg">
 			</div>
-			<h5 class="">已选择的商品</h5>
+			
 			<div class="gwc_table">
+				<div class="buzhou">
+					<img src="img/buzhou.jpg">
+				</div>
+				<h5 class="">已选择的商品</h5>
 				<div class="gwc_table_t">
 					<ul class="gwc01">
 						<li class="gwc1">商品</li>
@@ -41,9 +42,9 @@
 					</ul>
 					
 					<div class="gwcpush">
-						<ul class="gwc02">
+						<!--<ul class="gwc02">
 							<li class="gwc1 gwc1v">
-								<img src="img/shangpin01.jpg">
+								<img src="img/sp1.jpg">
 								<a href="" class="shop-name">${data[i].name}</a>
 							</li>
 							<li class="gwc2">￥<span class="gwc2v shop-price">${data[i].price}</span></li>
@@ -57,20 +58,10 @@
 							<li class="gwc6">￥<span class="gwc6v shop-total">124.00</span></li>
 							<li class="gwc7 gwc7v">
 								<a href="denglu.html">收藏</a> | 
-								<a class="shop-btn-del" attr-index="${i}">移除</a>
+								<a class="shop-btn-del">移除</a>
 							</li>
-						</ul>
+						</ul>-->
 					</div>
-					<script src="js/ajax2.0.0.js"></script>
-				    <script src="js/shop_car.js"></script>
-				    <script>
-				        shopCar.init('.gwcpush');
-				    </script>
-					
-									
-					
-					
-					
 					<div class="gwc03">
 						<div class="money">
 							<div>商品总金额 : ￥<span class="money1"> 124.00</span></div>
@@ -78,29 +69,35 @@
 							<div>(订单可得积分<c class="money3">124</c>)<b>总金额</b> : ￥<span class="money2">124.00</span></div>
 						</div>
 					</div>
-					
 					<div class="gwc04">
 						<div class="gwc041">清空购物车</div>
 						<div class="gwc042">凑单商品 </div>
 						<div class="gwc044">下单结算 ▶</div>
-						<a  class="gwc043 "href="">继续购物</a>
+						<a  class="gwc043 "href="index.html">继续购物</a>
 					</div>
 				</div>
 			</div>
-			
 		</div>
 	</div>
+	<script src="js/ajax2.0.0.js"></script>
+	<script src="js/shop_car.js"></script>
 	<script src="js/gouwuche.js"></script>
+	<script>
+	    shopCar.init('.gwcpush')
+//		gouwuchefn();
+	</script>
 	
 	<!--footer-->
 	<div class="footer"></div>
 	<script src="js/jquery.js"></script>
 	<script src="js/move2.js"></script>
 	<script src="js/hover.js"></script>
+	<script src="js/xgwc.js"></script>
 	<script>
    	$('.header').load('head_foot.html .header');
    	$('.footer').load('head_foot.html .footer',function(){
    		hoverfn();
+   		xgwc();
    	});
    	</script>
 	

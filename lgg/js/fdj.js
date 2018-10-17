@@ -87,8 +87,6 @@ var big = (function(){
       this.$showImage.firstElementChild.src = src.replace('small', 'big');
       this.$bigImage.src = src.replace('small', 'largest');
     }
-    
   }
-  
 }())
 big.init();

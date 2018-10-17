@@ -11,7 +11,6 @@ function hoverfn(){
 	var $i2=document.getElementsByClassName("ihover2");
 	for(let c=0;c<$i2.length;c++){
 		$i2[c].onmouseover=function(){
-			console.log(2);
 			move2($i2[c], 'margin-top',40,0.5,()=> {
 	        move2($i2[c], 'margin-top',50,10)
 	      });

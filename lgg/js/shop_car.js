@@ -37,7 +37,7 @@ var shopCar = (function () {
                     }
                 }
             }
-            console.log(this.carList);
+//          console.log(this.carList);
             this.countPrice(this.carList);
             this.insertCarList(this.carList);
         },
@@ -52,7 +52,7 @@ var shopCar = (function () {
             var arr = [];
             var shop;
             // debugger
-            console.log(this.shopList)
+//          console.log(this.shopList)
             for (var i = 0; i < data.length; i++) {
                 // 通过id获取商品信息
                 // for(var j = 0; j < this.shopList.length; j++) {
@@ -64,8 +64,8 @@ var shopCar = (function () {
                 arr.push(`
                 <ul class="gwc02">
 					<li class="gwc1 gwc1v">
-						<img src="img/shangpin01.jpg">
-						<a href="" class="shop-name">${data[i].name}</a>
+						<img src=${data[i].img}>
+						<a href=${data[i].href} class="shop-name">${data[i].name}</a>
 					</li>
 					<li class="gwc2">￥<span class="gwc2v shop-price">${data[i].price}</span></li>
 					<li class="gwc3 gwc3v">
@@ -74,16 +74,15 @@ var shopCar = (function () {
 						<button class="gwc3r">+</button>	
 					</li>
 					<li class="gwc4 ">￥<span class="gwc4v">0.00</span></li>
-					<li class="gwc5 gwc5v">124</li>
-					<li class="gwc6">￥<span class="gwc6v shop-total">124.00</span></li>
+					<li class="gwc5 gwc5v">${data[i].price*data[i].count}</li>
+					<li class="gwc6">￥<span class="gwc6v shop-total">${data[i].price*data[i].count}.00</span></li>
 					<li class="gwc7 gwc7v">
-						<a href="denglu.html">收藏</a> | 
-						<a class="shop-btn-del" attr-index="${i}">移除</a>
+						<a href="denglu.html">收藏</a> 
+						<a class="shop-btn-del">移除</a>
 					</li>
 				</ul>`);
-                
             }
             this.$gwcpush.innerHTML = arr.join('');
-        },
+        }
     }
 }())
