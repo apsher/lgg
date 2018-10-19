@@ -92,11 +92,11 @@ function gouwuchefn(){
 				window.location.reload();
 			}
 			$alldel[0].onclick=function(){
-				localStorage.clear();
+//				localStorage="";
+				var list=JSON.parse(localStorage.shopList);
+				list.splice(0,3);
+				localStorage.shopList=JSON.stringify(list);
 				window.location.reload();
-//				var list=JSON.parse(localStorage.shopList);
-//				list.splice(0,3);
-//				localStorage.shopList=JSON.stringify(list);
 //		    	$gwc_c[0].style.display="block";
 //		    	$gwc_table[0].style.display="none";
 			}
